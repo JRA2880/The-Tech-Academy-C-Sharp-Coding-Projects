@@ -43,12 +43,12 @@ namespace ACMECarInsurance
         static void Main(string[] args)
         {
             Console.WriteLine("--------------------------------------------------------------------------------------------------");
-            Console.WriteLine("\t\tWelcome to ACME Car Insurance! If you got a pulse, you can get car insurance!");
+            Console.WriteLine("\tWelcome to ACME Car Insurance! If you got a pulse, you can get car insurance!");
             Console.WriteLine("--------------------------------------------------------------------------------------------------");
             Console.WriteLine();
             Customer customer = new Customer();
 
-            Console.WriteLine("Please enter the following information to determine a car insurance quote >> ");
+            Console.WriteLine("Please enter the following information to determine a car insurance quote: \n ");
             Console.Write("First Name >> ");
             customer.FirstName = Console.ReadLine();
             Console.Write("Last Name >> ");

@@ -79,74 +79,70 @@ namespace ACMECarInsurance
             DateTime currentDate = DateTime.Today;
             var currentAge = currentDate.Year - customer.BirthDate.Year;
             customer.CurrentAge = Convert.ToInt32(currentAge);
+
             Console.WriteLine("Current Age:      {0}", customer.CurrentAge.ToString());
 
             Console.WriteLine("Car Year:         {0}", customer.CarYear.ToString());
             Console.WriteLine("Car Make:         {0}", customer.CarMake);
             Console.WriteLine("Car Model:        {0}", customer.CarModel);
-            Console.WriteLine("DUI:              {0}", customer.DUI.ToUpper());
+            Console.WriteLine("DUI:              {0}", customer.DUI);
             Console.WriteLine("Speeding Tickets: {0}", customer.SpeedingTickets.ToString());
-            Console.WriteLine("Car Insurance     {0}", customer.CarInsuranceType.ToUpper());
+            Console.WriteLine("Car Insurance     {0}", customer.CarInsuranceType);
         }
 
         public void InsuranceQuote(Customer customer)
-        {
-            double insuranceBase = 50.0;
-            double monthlyTotal;
+        { 
+            double monthlyTotal = 50.0;
     
-            if (customer.CurrentAge < 25)
+            if (customer.CurrentAge >18 && customer.CurrentAge < 25)
             {
-                monthlyTotal = insuranceBase + 25.0;
+                monthlyTotal += 25.0;
                 Console.WriteLine("Since you are under 25 years old, an extra $25.00 is added to the monthly total");
             }
             if (customer.CurrentAge < 18)
             {
-                monthlyTotal = insuranceBase + 100.0;
+                monthlyTotal += 100.0;
                 Console.WriteLine("Since you are under 18 years old, an extra $100.00 is added to the monthly total.");
             }
-            if (customer.CurrentAge > 100)
+            if (customer.CurrentAge >= 100)
             {
-                monthlyTotal = insuranceBase + 25.0;
+                monthlyTotal += 25.0;
                 Console.WriteLine("Since you are over 100 years old, an extra $25.00 is added to the monthly total.");
             }
             if (customer.CarYear < 2000)
             {
-                monthlyTotal = insuranceBase + 25.0;
+                monthlyTotal += 25.0;
                 Console.WriteLine("Since the car year is less than 2000, an extra $25.00 is added to the monthly total.");
             }
             if (customer.CarYear > 2015)
-            {
-                monthlyTotal = insuranceBase + 25.0;
+            { 
+                monthlyTotal += 25.0;
                 Console.WriteLine("Since the car year is greater than 2015, an extra $25.00 is added to the monthly total.");
             }
             if (customer.CarMake == "Porshe")
-            {
-                monthlyTotal = insuranceBase + 25.0;
+            { 
+                monthlyTotal += 25.0;
                 Console.WriteLine("Since the car make is Porshe, an extra $25.00 is added to the monthly total.");
             }
             if (customer.CarModel == "911 Carrera")
             {
-                monthlyTotal = insuranceBase + 25.0;
+                monthlyTotal += 25.0;
                 Console.WriteLine("Since the car model is a 911 Carrera, an extra $25.00 is added to the monthly total.");
             }
             if (customer.SpeedingTickets > 0)
             {
-                monthlyTotal = customer.SpeedingTickets * 10;
+                monthlyTotal = monthlyTotal + (customer.SpeedingTickets * 10);
                 Console.WriteLine("Since you have {0} speeding tickets, an extra {1} is added to the monthly total.", customer.SpeedingTickets, (customer.SpeedingTickets * 10).ToString("C"));
             }
-            if (customer.DUI == "YES")
+            if (customer.DUI == "yes")
             {
-                monthlyTotal = (insuranceBase * 0.25) + insuranceBase;
-                Console.WriteLine("Because you have a DUI, an extra 25% is added to the monthly total.");
+                monthlyTotal = monthlyTotal + (12.50);
+                Console.WriteLine("Because you have a DUI, an extra $12.50 is added to your monthly total.");
             }
-            if (customer.CarInsuranceType == "FULL COVERAGE")
+            if (customer.CarInsuranceType == "full coverage")
             {
-                monthlyTotal = (insuranceBase * 0.50) + insuranceBase;
-                Console.WriteLine("Because you have requested full coverage, an extra 50% is added to the monthly total.");
-            }
-            else
-            {
-                monthlyTotal = insuranceBase;
+                monthlyTotal = monthlyTotal + (25.0);
+                Console.WriteLine("Because you have requested full coverage, an extra $25.00 is added to the monthly total.");
             }
             Console.WriteLine("Your monthly total is {0}.", monthlyTotal.ToString("C"));
         }
