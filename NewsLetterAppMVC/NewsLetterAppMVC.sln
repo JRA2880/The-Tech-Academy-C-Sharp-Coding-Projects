@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACMECarInsuranceMVCApp", "ACMECarInsuranceMVCApp\ACMECarInsuranceMVCApp.csproj", "{A6088BA6-F267-40EF-A7A5-0BFC29ABBC97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsLetterAppMVC", "NewsLetterAppMVC\NewsLetterAppMVC.csproj", "{90E577BA-62C7-4DD7-8085-54985ED71E29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A6088BA6-F267-40EF-A7A5-0BFC29ABBC97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6088BA6-F267-40EF-A7A5-0BFC29ABBC97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6088BA6-F267-40EF-A7A5-0BFC29ABBC97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6088BA6-F267-40EF-A7A5-0BFC29ABBC97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E577BA-62C7-4DD7-8085-54985ED71E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E577BA-62C7-4DD7-8085-54985ED71E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E577BA-62C7-4DD7-8085-54985ED71E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E577BA-62C7-4DD7-8085-54985ED71E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EE35AD82-4A68-4E11-91E4-830851A21C8B}
+		SolutionGuid = {3CBCB311-0ED1-4C32-8AF2-DA3A679F3864}
 	EndGlobalSection
 EndGlobal

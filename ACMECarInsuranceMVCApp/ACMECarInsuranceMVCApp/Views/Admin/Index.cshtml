@@ -1,0 +1,45 @@
+﻿@using ACMECarInsuranceMVCApp.ViewModels
+@model List<QuoteVm>
+
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0 bg-primary text-capitalize text-uppercase">Insurance Quotes</h5>
+        </div>
+        <div class="card-body">
+                 @foreach (var quote in Model)
+                {
+                    <div class="row no gutters">
+                    <div class="form-group col-md-3 mx-auto px-auto" >
+                        <label class="text-center" name="FirstName">First Name</label>
+                        <br/>
+                        @quote.FirstName
+                        <br/>
+                    </div>
+                    <div class="form-group col-md-3 mx-auto px-auto">
+                        <label class="text-center" name="LastName">Last Name</label>
+                        <br/>
+                        @quote.LastName
+                        <br/>
+                    </div>
+                    <div class="form-group col-md-3 mx-auto px-auto">
+                        <label class="text-center" name="EmailAddress">E-mail Address</label>
+                        <br/>
+                        @quote.EmailAddress
+                        <br/>
+                    </div>
+                    <div class="form-group col-md-3 mx-auto px-auto">
+                        <label class="text-center" name="QuoteTotal">Monthly Quote</label>
+                        <br/>
+                        @quote.QuoteTotal.ToString("C")
+                        <br/>
+                    </div>
+                    </div>
+                 }
+            </div>
+         </div>
+    </div>
+
+                
+          
+      
