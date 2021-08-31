@@ -1,0 +1,46 @@
+Queen of Diamonds
+
+Jack of Spades
+
+King of Hearts
+
+Nine of Hearts
+
+Eight of Hearts
+
+Queen of Diamonds
+
+Four of Clubs
+
+King of Clubs
+
+Ace of Diamonds
+
+Ten of Clubs
+
+Six of Clubs
+
+Five of Clubs
+
+Six of Diamonds
+
+Queen of Diamonds
+
+Two of Diamonds
+
+Two of Spades
+
+King of Spades
+
+Two of Hearts
+
+Ace of Hearts
+
+Ace of Diamonds
+
+Nine of Diamonds
+
+Two of Clubs
+
+Queen of Diamonds
+
